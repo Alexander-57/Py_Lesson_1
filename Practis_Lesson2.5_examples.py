@@ -98,6 +98,11 @@ print("Максимальная цифра в числе =", a)
 Задача 10
 Найти количество цифр 5 в числе
 '''
-
-
-
+integer_number = int(input("Введите число = "))
+count = 0
+while integer_number > 0:
+    number = integer_number%10
+    if number == 5:
+        count +=1
+    integer_number//=10
+print("Количество цифр 5 введенных пользователем =", count)
