@@ -32,9 +32,9 @@ def rare_letter(names):
 print(rare_letter(list_names))
 
 # 4.  В файле с логами найти дату самого позднего лога (по метке времени):
-from datetime import datetime # загрузить модуль DateTime<<<импортировать модуль работающий с датами
+from datetime import datetime                                                                                           # загрузить модуль DateTime<<<импортировать модуль работающий с датами
 
-with open('C:/Users/alex_/OneDrive/Documents/Python/My_project/Py_Lesson_1.1/log','r', encoding='utf-8') as file:       # открыть файл
+with open('C:/Users/alex_/OneDrive/Documents/Python/My_project/Py_Lesson_1.1/log','r', encoding='utf-8') as file:       # открыть файл, через with
     last_date = 0                                                                                                       # создание переменной
     for line in file:                                                                                                   # цикл проверяющий на последнюю дату
         if not last_date:
