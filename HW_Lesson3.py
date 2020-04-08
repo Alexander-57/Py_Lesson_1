@@ -23,16 +23,16 @@ file_list = file.split()
 print(file_list)
 
 # 3) привести все слова к нижнему регистру (map);
-file_lower = file.lower()
+file_lower = list(map(str.lower, file_list))
 print(file_lower)
 
 # 3) получить из list пункта 3 dict, ключами которого являются слова, а значениями их количество появлений в тексте;
 file_dict = {}
-for i in range (len(file_list)):
+for i in range(len(file_list)):
     count = 0
-    word = file[i]
-    for i in range (len(file_list)):
-        if word == file_list[i]:
+    word = file_lower[i]
+    for i in range(len(file_list)):
+        if word == file_lower[i]:
             count = count + 1
     file_dict[word] = count
 print(file_dict)
