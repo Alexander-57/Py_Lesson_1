@@ -8,5 +8,5 @@ else:
     print(n, '- составное число')
 print('Список всех делителей числа:', divisor_master.DivNum(n))
 print('Максимальный простой делитель числа:', divisor_master.MaxDivNum(n))
-print ('Простые множители числа','{} = {}' .format(n, ' * '.join(map(str, divisor_master.PrimeMult(n)))))
+print('Простые множители числа','{} = {}' .format(n, ' * '.join(map(str, divisor_master.PrimeMult(n)))))
 print('Максимальный делитель числа:', divisor_master.DivNumMax(n))
