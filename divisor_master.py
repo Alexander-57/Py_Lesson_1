@@ -44,13 +44,13 @@ def DivNumMax(n):
             list_div_max == list_div_max.insert(0, i)
     return list_div_max[0]
 
-n = int(input('Введите натуральное число от 1 до 1000:'))
-
-if PrimeNum(n):
-    print(n, '- простое число')
-else:
-    print(n, '- составное число')
-print('Список всех делителей числа:', DivNum(n))
-print('Максимальный простой делитель числа:', MaxDivNum(n))
-print ('Простые множители числа','{} = {}' .format(n, ' * '.join(map(str, PrimeMult(n)))))
-print('Максимальный делитель числа:', DivNumMax(n))
+# n = int(input('Введите натуральное число от 1 до 1000:'))
+#
+# if PrimeNum(n):
+#     print(n, '- простое число')
+# else:
+#     print(n, '- составное число')
+# print('Список всех делителей числа:', DivNum(n))
+# print('Максимальный простой делитель числа:', MaxDivNum(n))
+# print ('Простые множители числа','{} = {}' .format(n, ' * '.join(map(str, PrimeMult(n)))))
+# print('Максимальный делитель числа:', DivNumMax(n))
